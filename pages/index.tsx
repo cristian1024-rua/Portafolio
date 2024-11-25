@@ -1,12 +1,12 @@
 import Contact from '@/Components/Contact';
-import MobileNav from '@/Components/MobileNav';
-import Projects from '@/Components/Projects';
-import Services from '@/Components/Services';
+import MobileNav from '@/Components/mobileNav';
+import Projects from '@/Components/projects';
+import Services from '@/Components/services';
 import { useState } from "react";
 import About from "../components/About";
 import Education from '../components/Education';
-import Hero from "../components/Hero";
-import Nav from '../components/Nav';
+import Hero from "../Components/hero";
+import Nav from '../Components/nav';
 
 const HomePage = () => {
   const [nav, setNav] = useState(false);

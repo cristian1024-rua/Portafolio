@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Particle from "./Particle";
-import TextEffect from "./TextEffect";
+import Particle from "./particle";
+import TextEffect from "./textEffect";
 import { useTheme } from "../context/ThemeContext"; // Ruta correcta al ThemeContext
 
 const Hero = () => {

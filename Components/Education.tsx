@@ -1,4 +1,4 @@
-import EduItems from "./EduItems";
+import EduItems from "./eduItems";
 import { useTheme } from "../context/ThemeContext"; // Asegúrate de importar el hook useTheme
 
 const Education = () => {
