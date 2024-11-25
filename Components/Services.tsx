@@ -1,8 +1,8 @@
 import { CodeBracketIcon, CubeIcon, PaintBrushIcon, RocketLaunchIcon } from "@heroicons/react/24/solid";
-import { useTheme } from "../context/ThemeContext"; // Importa el hook useTheme
+import { useTheme } from "../context/ThemeContext"; 
 
 const Services = () => {
-  const { theme } = useTheme(); // Obtener el tema actual
+  const { theme } = useTheme();
 
   return (
     <div className={`pt-[4rem] md:pt-[8rem] pb-[5rem] ${theme === 'dark' ? 'bg-[#02050a]' : 'bg-[#3c688d]'}`}>
@@ -11,7 +11,6 @@ const Services = () => {
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem]">
         
-        {/* Servicio 1: HTML */}
         <div>
           <div className={`bg-blue-400 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold text-center p-[2rem] ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
             <CodeBracketIcon className="w-[6rem] h-[6rem] mx-auto text-white"/>
@@ -20,7 +19,6 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Servicio 2: CSS */}
         <div>
           <div className={`bg-blue-400 hover:scale-110 transform transition-all duration-300 uppercase font-semibold text-center p-[2rem] ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
             <PaintBrushIcon className="w-[6rem] h-[6rem] mx-auto text-white"/>
@@ -29,7 +27,6 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Servicio 3: Angular */}
         <div>
           <div className={`bg-blue-400 hover:scale-110 transform transition-all duration-300 uppercase font-semibold text-center p-[2rem] ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
             <RocketLaunchIcon className="w-[6rem] h-[6rem] mx-auto text-white"/>
@@ -38,7 +35,6 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Servicio 4: Python */}
         <div>
           <div className={`bg-blue-400 hover:scale-110 transform transition-all duration-300 hover:rotate-6 uppercase font-semibold text-center p-[2rem] ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
             <CubeIcon className="w-[6rem] h-[6rem] mx-auto text-white"/>
@@ -47,7 +43,6 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Servicio 5: Java */}
         <div>
           <div className={`bg-blue-400 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold text-center p-[2rem] ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
             <PaintBrushIcon className="w-[6rem] h-[6rem] mx-auto text-white"/>
@@ -56,7 +51,6 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Servicio 6: TypeScript */}
         <div>
           <div className={`bg-blue-400 hover:scale-110 transform transition-all duration-300 uppercase font-semibold text-center p-[2rem] ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
             <CubeIcon className="w-[6rem] h-[6rem] mx-auto text-white"/>
@@ -65,7 +59,6 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Servicio 7: Vercel */}
         <div>
           <div className={`bg-blue-400 hover:scale-110 transform transition-all duration-300 uppercase font-semibold text-center p-[2rem] ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
             <RocketLaunchIcon className="w-[6rem] h-[6rem] mx-auto text-white"/>
@@ -74,7 +67,6 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Servicio 8: Tailwind */}
         <div>
           <div className={`bg-blue-400 hover:scale-110 transform transition-all duration-300 hover:rotate-6 uppercase font-semibold text-center p-[2rem] ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
             <CodeBracketIcon className="w-[6rem] h-[6rem] mx-auto text-white"/>

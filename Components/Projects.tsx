@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { useState } from 'react';
-import { useTheme } from '../context/ThemeContext'; // Asegúrate de importar el hook useTheme
+import { useTheme } from '../context/ThemeContext';
 
 const Projects = () => {
-  const { theme } = useTheme(); // Obtener el tema actual
+  const { theme } = useTheme(); 
   const projects = [
     {
       src: "/images/f3.png",

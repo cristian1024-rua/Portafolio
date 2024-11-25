@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import { useTheme } from "../context/ThemeContext"; // Ruta correcta al ThemeContext
+import { useTheme } from "../context/ThemeContext";
 
 const About = () => {
-    const { theme } = useTheme(); // Obtener el tema actual
+    const { theme } = useTheme();
 
     return (
         <div className={`pb-[3rem] pt-[4rem] md:pt-[8rem] ${theme === 'dark' ? 'bg-[#02050a]' : 'bg-[#3c688d]'}`}>

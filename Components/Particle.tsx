@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
-//import { loadFull } from "tsparticles";//
+//import { loadFull } from "tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
 const Particle = () => {
@@ -28,9 +28,6 @@ const Particle = () => {
             loaded={particlesLoaded}
             options={{
                 background: {
-                    // color: {
-                    //  value: "",
-                    //},
                 },
                 fpsLimit: 120,
                 interactivity: {

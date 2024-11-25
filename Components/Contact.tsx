@@ -1,8 +1,8 @@
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { useTheme } from "../context/ThemeContext"; // Ruta correcta al ThemeContext
+import { useTheme } from "../context/ThemeContext";
 
 const Contact = () => {
-    const { theme } = useTheme(); // Obtener el tema actual
+    const { theme } = useTheme();
 
     return (
         <div className={`pt-32 pb-16 ${theme === 'dark' ? 'bg-[#02050a]' : 'bg-[#3c688d]'} text-white`}>

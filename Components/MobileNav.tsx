@@ -1,5 +1,5 @@
 import { XMarkIcon } from "@heroicons/react/24/solid";
-import { useTheme } from "../context/ThemeContext"; // Asegúrate de importar el hook useTheme
+import { useTheme } from "../context/ThemeContext"; 
 
 interface Props {
   nav: boolean;
@@ -7,7 +7,7 @@ interface Props {
 }
 
 const MobileNav = ({ nav, closeNav }: Props) => {
-  const { theme } = useTheme(); // Obtener el tema actual
+  const { theme } = useTheme();
   const navAnimation = nav ? "translate-x-0" : "translate-x-[100%]";
 
   return (

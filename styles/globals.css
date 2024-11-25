@@ -9,28 +9,27 @@
     @apply relative font-semibold text-white cursor-pointer text-[17px] w-fit md:block after:block after:content-[""] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden
   }
   .nav-link-mobile {
-    @apply relative mb-[2rem] font-semibold text-white cursor-pointer text-[27px] w-fit md:block after:block after:content-[""] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center
+    @apply text-lg font-bold mb-8 hover:text-blue-400 transition-all duration-300;
   }
   .heading {
     @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase
   }
   body[data-theme='light'] {
-    background-color: #f44336; /* Rojo para el modo claro */
-    color: white;
+    background-color: #ffffff;
+    color: black; 
     transition: background-color 0.3s, color 0.3s;
   }
+
   
-  /* Modo oscuro (Gris) */
   body[data-theme='dark'] {
-    background-color: #555555; /* Gris para el modo oscuro */
+    background-color: #555555; 
     color: white;
     transition: background-color 0.3s, color 0.3s;
   }
   
-  /* Aseguramos que todos los elementos hereden estos estilos */
   .app-container {
-    background-color: inherit; /* Para heredar el color de fondo global */
-    color: inherit; /* Para heredar el color de texto global */
+    background-color: inherit; 
+    color: inherit;
   }
 }
 

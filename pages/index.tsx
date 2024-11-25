@@ -1,12 +1,13 @@
 import Contact from '@/Components/Contact';
-import MobileNav from '@/Components/mobileNav';
-import Projects from '@/Components/projects';
-import Services from '@/Components/services';
+import MobileNav from '@/Components/MobileNav';
+import Projects from '@/Components/Projects';
+import Services from '@/Components/Services';
 import { useState } from "react";
-import About from "../components/About";
-import Education from '../components/Education';
-import Hero from "../Components/hero";
-import Nav from '../Components/nav';
+import About from "../Components/About";
+import Education from '../Components/Education';
+import Hero from "../Components/Hero";
+import Nav from '../Components/Nav';
+import EduItems from '../EduItems'; 
 
 const HomePage = () => {
   const [nav, setNav] = useState(false);
@@ -30,4 +31,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default HomePage;

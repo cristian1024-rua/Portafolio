@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import Particle from "./particle";
-import TextEffect from "./textEffect";
-import { useTheme } from "../context/ThemeContext"; // Ruta correcta al ThemeContext
+import Particle from "./Particle";
+import TextEffect from "./TextEffect";
+import { useTheme } from "../context/ThemeContext"; 
 
 const Hero = () => {
-    const { theme } = useTheme(); // Obtener el tema actual
+    const { theme } = useTheme(); 
 
     return (
         <div className={`h-[88vh] mt-[10vh] bg-cover bg-center ${theme === 'dark' ? 'bg-[#02050a]' : 'bg-[#3c688d]'}`}>
@@ -17,13 +17,10 @@ const Hero = () => {
                     <TextEffect />
                     <p className={`mt-[1.5rem] text-[18px] ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
                         ¡Hola y bienvenido a mi portafolio!
-                        Soy un apasionado ingeniero en desarrollo de software con experiencia en la creación de soluciones tecnológicas innovadoras y eficientes. Mi objetivo es transformar ideas en aplicaciones funcionales que generen impacto y valor. Aquí encontrarás algunos de los proyectos en los que he trabajado, mis áreas de especialización, y cómo puedo contribuir a tus necesidades tecnológicas. ¡Gracias por visitarme!.
+                        Soy un apasionado ingeniero en desarrollo de software con experiencia en la creación de soluciones tecnológicas innovadoras y eficientes. Mi objetivo es transformar ideas en aplicaciones funcionales que generen impacto y valor. Aquí encontrarás algunos de los proyectos en los que he trabajado, mis áreas de especialización, y cómo puedo contribuir a tus necesidades tecnológicas. ¡Gracias por visitarme! 
                     </p>
-                    <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
-                        {/* Aquí puedes añadir botones u otros elementos */}
-                    </div>
                 </div>
-                <div className="w-[500px] hidden bg-white relative lg:flex items-center rounded-full h-[500px]">
+                <div className="w-[500px] hidden relative lg:flex items-center rounded-full h-[500px]" style={{ backgroundColor: 'white' }}>
                     <Image src="/images/foto3.jpg" alt="user" layout="fill" className="object-cover rounded-full"/>
                 </div>
             </div>
@@ -32,4 +29,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

@@ -1,12 +1,11 @@
-import EduItems from "./eduItems";
-import { useTheme } from "../context/ThemeContext"; // Asegúrate de importar el hook useTheme
+import EduItems from '../Components/EduItems'; 
+import { useTheme } from "../context/ThemeContext"; 
 
 const Education = () => {
-  const { theme } = useTheme(); // Obtener el tema actual
+  const { theme } = useTheme(); 
 
   return (
     <div className={`pt-[4rem] md:pt-[8rem] pb-[5rem] ${theme === 'dark' ? 'bg-[#02050a]' : 'bg-[#3c688d]'} text-center`}>
-      {/* Título de la sección */}
       <h1
         id="education"
         className={`text-blue-400 heading text-[2rem] md:text-[3rem] font-bold mb-[3rem] ${theme === 'dark' ? 'text-white' : 'text-black'}`}
@@ -14,7 +13,6 @@ const Education = () => {
         EDUCATION
       </h1>
 
-      {/* Contenedor de los elementos */}
       <div className="w-[90%] lg:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[4rem] items-start">
         <EduItems
           title="INSTITUCION EDUCATIVA TECNICA EL ESPINO"
